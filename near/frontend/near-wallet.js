@@ -73,7 +73,7 @@ export class Wallet {
     });
     return JSON.parse(Buffer.from(res.result).toString());
   }
-
+  
   // Call a method that changes the contract's state
   async callMethod({ contractId, method, args = {}, gas = THIRTY_TGAS, deposit = NO_DEPOSIT }) {
     // Sign a transaction with the "FunctionCall" action
